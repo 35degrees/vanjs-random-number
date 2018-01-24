@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random Number</title>
+</head>
+<style>
+  body {
+    background-color: aliceblue;
+  }
+  h1, h3 {
+    color: midnightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+  }
+  input {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  output {
+    display: block;
+    margin: 0 auto;
+    width: 30vw;
+    color: midnightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .input-box {
+    border: 1px solid #777;
+    width: 20vw;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: #f7f7f7;
+    padding: 1rem 2rem
+
+  }
+</style>
+<body>
+  <h1>Can you guess what number I'm thinking about in 5 guesses?</h1>
+  <h3>Please guess a number between 1 and 100.</h3>
+  <div class="input-box">
+  <input type="number" id="my-guess" placeholder="Your guess here..."></input>
+  <input type="submit" id="submit-guess" onclick="countClicks()"></input>
+</div>
+
+
+<div id="output"></div>
+</body>
+<script src="samrandom.js"></script>
+</html>
